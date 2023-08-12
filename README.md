@@ -8,7 +8,8 @@ To address the metastability issues, we convert the read and write pointers to t
 The files `fifo.v` and `sync_fifo_tb.v` simulate a synchronous FIFO, that works on a single clock cycle as both the read and write cycles. 
 
 The two clock signals given to the module are `wr_clk` and `rd_clk`. The many variables used in the module are:
- Markup : 1. `readEn` is read enable signal, which enables the buffer to read the stored data.
+
+1. `readEn` is read enable signal, which enables the buffer to read the stored data.
 2. `writeEn` is the write enable signal, which enables the buffer to get some data written in it.
 3. `buf_in` is the data that will be written into the buffer.
 4. `buf_out` is the data that is stored in the buffer and will be read out from it.
